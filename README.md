@@ -8,7 +8,7 @@ ShadowAI is a production-ready ecosystem designed for seamless AI orchestration 
 
 1.  **[shadow-android](https://github.com/alrightryanx/shadow-android) (Android App)**: The mobile core. A voice-first AI assistant supporting Android, Android Auto, Wear OS, and Google TV. It serves as your primary interface for hands-free AI interaction.
 2.  **[shadow-bridge](https://github.com/alrightryanx/shadow-bridge) (Windows PC Companion)**: The infrastructure bridge. This Windows application connects your phone to your PC, enabling ADB execution, SFTP transfers, and local tool orchestration.
-3.  **[shadow-web](https://github.com/alrightryanx/backend) (Orchestration Backend)**: The central brain. A high-performance backend managing cloud integrations, usage tracking, unified memory, and multi-agent team coordination.
+3.  **[shadow-web](https://github.com/alrightryanx/shadow-web) (Orchestration Backend)**: The central brain. A high-performance backend managing cloud integrations, usage tracking, unified memory, and multi-agent team coordination.
 4.  **[claude-shadow](https://github.com/alrightryanx/claude-shadow) (Claude Code Plugin)**: The developer's relay. A specialized plugin for Anthropic's Claude Code that enables mobile notifications and remote approvals.
 5.  **[gemini-shadow](https://github.com/alrightryanx/gemini-shadow) (Gemini Bridge Relay)**: The developer's relay. A specialized plugin for Google's Gemini CLI that enables mobile notifications and remote approvals.
 
