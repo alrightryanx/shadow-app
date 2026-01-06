@@ -246,9 +246,15 @@ npm start
 
 ```
 ┌─────────────────┐         ┌──────────────────┐
-│  Android App    │◄─────►│  ShadowBridge    │
-│  (shadow-       │ SSH    │  (Windows PC)    │
-│   android)       │         │                  │
+│  Android App    │         │                  │
+│  (shadow-       │◄───┐     │  ShadowBridge    │
+│   android)       │   │     │  (Windows PC)    │
+└─────────────────┘   │     │                  │
+                      │ SSH │                  │
+┌─────────────────┐   ├────►│                  │
+│  iOS App        │   │     │                  │
+│  (shadow-       │◄──┘     │                  │
+│   ios)           │         │                  │
 └────────┬────────┘         └────────┬─────────┘
          │                          │
          │ WebSocket                │ HTTP/WS
@@ -279,6 +285,7 @@ shadow-app/
 │   ├── app/                # Main app module
 │   ├── wear/               # Wear OS app
 │   └── shared/             # Core business logic
+├── shadow-ios/              # iOS app (port)
 ├── shadow-bridge/          # Windows PC companion
 │   ├── plugins/             # Claude Code plugin
 │   └── web/                # Web dashboard
