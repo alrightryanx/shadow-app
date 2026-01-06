@@ -1,41 +1,53 @@
-# ShadowAI Ecosystem
+# ShadowApp 🚀✨
 
-A comprehensive voice-first AI assistant platform featuring Android app, Windows PC companion, web dashboard and Claude Code integration.
+**The Multi-Platform Intelligence Hub for ShadowAI.**
+
+ShadowApp is the central repository for the cross-platform ShadowAI experience, consolidating the Desktop, Mobile (Android & iOS), Web, and Refinement layers into a single ecosystem.
+
+## 📦 Core Components
+
+### [ShadowRefiner](./refiner) 🛡️
+ShadowRefiner is our high-speed **Intent Reconstruction** and **Quality Governance** layer. It sits locally on your PC and acts as a "Chief of Staff" for all AI CLI interactions (Claude, Gemini, Codex).
+
+*   **Intent Reconstruction:** Automatically transforms "shitty" or vague prompts into high-fidelity technical specs by analyzing your local environment context.
+*   **Active Governance:** Intervenes to block zero-entropy noise and auto-triggers re-rolls for poor AI responses.
+*   **Security Firewall:** Locally masks credentials and secrets before cloud transmission.
+
+### 📱 ShadowAndroid Integration
+
+**ShadowRefiner** is deeply integrated with the [ShadowAndroid](../shadow-android) application to provide a "Universal Controller" experience:
+
+1.  **Distributed Notifications:** When the Refiner detects a low-quality interaction on your PC, it relays a priority alert via **ShadowBridge** directly to your Android device.
+2.  **Executive Reporting:** You receive real-time "Prompt Blocked" or "Intent Improved" notifications on your phone, keeping you in control of your PC workflow even when you're away from the keyboard.
+3.  **Cross-Platform Quality Loop:** The Android app serves as the dashboard for the Refiner's audit logs, allowing you to review and approve prompt reconstructions from your mobile device.
+
+## 🛠️ Getting Started
+
+To initialize the full ecosystem including the Refiner:
+
+```bash
+git clone --recursive https://github.com/alrightryanx/shadow-app.git
+cd shadow-app
+```
+
+---
+**Part of the ShadowAI Ecosystem.**
 
 ## 📱 Components
 
 ### [shadow-android](./shadow-android/)
 **Primary Application** - Android app with MVVM architecture
 
-**Features:**
-- Voice-first AI assistant with hotword detection
-- Multi-backend support: SSH (Claude, OpenCode, Gemini, Aider, Cursor), API (OpenAI, Anthropic, Grok), Local LLM (on-device)
-- Session persistence and chat history sync across devices
-- Android Auto & Wear OS companions
-- Image & Video generation (SDXL, HunyuanVideo, Wan 2.1, LTX Video)
-- Built-in agent system (Code writing, Debugging, Documentation, Analysis)
-- Offline conversation caching
-- Note-taking and task automation
+---
 
-**Tech Stack:**
-- Kotlin, Jetpack Compose, Hilt for DI
-- Room database, DataStore for preferences
-- JSch for SSH connections
-- Whisper.cpp for speech recognition (JNI)
-- GGML/llama.cpp for local LLM (JNI)
+### [shadow-ios](https://github.com/alrightryanx/shadow-ios) 📱
+**iOS Port (Coming Soon)** - Native Swift/SwiftUI application
 
-**Build:**
-```bash
-cd shadow-android
-./gradlew assembleDebug           # Debug APK
-./gradlew bundleRelease          # Play Store AAB
-./gradlew :app:installDebug    # Install to connected device
-```
-
-**Install:**
-```bash
-adb install -r app/build/outputs/apk/debug/app-debug.apk
-```
+**Key Features:**
+- Persistent SSH Roaming Engine
+- Unified Sync for Projects, Notes, and Chats
+- Native iOS Human Interface Design
+- ShadowBridge discovery via mDNS/Bonjour
 
 ---
 
