@@ -1,3 +1,6 @@
 [submodule "refiner"]
 	path = refiner
 	url = https://github.com/alrightryanx/shadow-refiner.git
+[submodule "shadow-ios"]
+	path = shadow-ios
+	url = https://github.com/alrightryanx/shadow-ios.git
